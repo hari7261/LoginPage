@@ -1,8 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import { Link } from 'react-router-dom';
 
-function App() {
+function Login() {
+  return <h2>Login Page</h2>;
+}
+
+function SignIn() {
+  return <h2>Sign In Page</h2>;
+}
+
+function Home() {
   return (
     <div className="App">
       <header className="App-header">
@@ -28,6 +36,18 @@ function App() {
         <p>Get in touch with Himanshu for any cyber security-related inquiries.</p>
       </section>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
+    </Router>
   );
 }
 
