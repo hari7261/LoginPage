@@ -3,11 +3,21 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 function Login() {
-  return <h2>Login Page</h2>;
+  return (
+    <div>
+      <h2>Login Page</h2>
+      <p>Welcome to the Login Page. Please log in to continue.</p>
+    </div>
+  );
 }
 
 function SignIn() {
-  return <h2>Sign In Page</h2>;
+  return (
+    <div>
+      <h2>Sign In Page</h2>
+      <p>Create an account to join Himanshu's Cyber Security World.</p>
+    </div>
+  );
 }
 
 function Home() {
