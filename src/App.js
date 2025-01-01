@@ -94,14 +94,6 @@ const App = () => {
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               H.
             </div>
-            <div className="hidden md:flex space-x-8">
-              <button className="hover:text-blue-500 transition-colors">
-                Login
-              </button>
-              <button className="px-6 py-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
-                Sign In
-              </button>
-            </div>
           </div>
         </div>
       </nav>
