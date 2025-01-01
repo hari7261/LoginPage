@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Shield, Lock, Terminal, Mail, ChevronRight, Database, Wifi, AlertTriangle } from 'lucide-react';
 
@@ -49,30 +48,6 @@ const App = () => {
   const matrixChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*";
   const getRandomChar = () => matrixChars[Math.floor(Math.random() * matrixChars.length)];
 
-=======
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-
-function Login() {
-  return (
-    <div>
-      <h2>Login Page</h2>
-      <p>Welcome to the Login Page. Please log in to continue.</p>
-    </div>
-  );
-}
-
-function SignIn() {
-  return (
-    <div>
-      <h2>Sign In Page</h2>
-      <p>Create an account to join Himanshu's Cyber Security World.</p>
-    </div>
-  );
-}
-
-function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       {/* Matrix Rain Background */}
@@ -118,6 +93,14 @@ function Home() {
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               H.
+            </div>
+            <div className="hidden md:flex space-x-8">
+              <button className="hover:text-blue-500 transition-colors">
+                Login
+              </button>
+              <button className="px-6 py-2 bg-blue-500 rounded-full hover:bg-blue-600 transition-colors">
+                Sign In
+              </button>
             </div>
           </div>
         </div>
@@ -264,3 +247,5 @@ function Home() {
     </div>
   );
 };
+
+export default App;
