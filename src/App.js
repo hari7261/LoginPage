@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Shield, Lock, Terminal, Mail, ChevronRight, Database, Wifi, AlertTriangle } from 'lucide-react';
 
@@ -48,6 +49,30 @@ const App = () => {
   const matrixChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*";
   const getRandomChar = () => matrixChars[Math.floor(Math.random() * matrixChars.length)];
 
+=======
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
+
+function Login() {
+  return (
+    <div>
+      <h2>Login Page</h2>
+      <p>Welcome to the Login Page. Please log in to continue.</p>
+    </div>
+  );
+}
+
+function SignIn() {
+  return (
+    <div>
+      <h2>Sign In Page</h2>
+      <p>Create an account to join Himanshu's Cyber Security World.</p>
+    </div>
+  );
+}
+
+function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       {/* Matrix Rain Background */}
@@ -239,5 +264,3 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
